@@ -1,4 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+  --gray1: #d3d3d3;
+  --teal: #006060;
+  --skyblue: #0ce3f2;
+  --orange: #ffd500;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2em;
+  color: var(--black);
+}
+
+form {
+  width: 400px;
+}
+
 body {
   display: flex;
   justify-content: center;
+}
+
+.container h1 {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: var(--black);
+  /* So I tried to do text-align to right here, but that did not work...  */
+  /* I would like to ask more information about how to know where to put things
+  so that I can properly modify the elements!
+   */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+/*  nav ul li a (to make things specific) */
+.navbar ul li a {
+  display: flex;
+  width: 100%;
+  /* this is the width of the parent element! */
+  /* margin: 1em; */
+  padding: 1em;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px;
+  border: solid;
+  border-color: var(--black);
+}
+
+.navbar ul li a:hover {
+  display: block;
+  border: 1px;
+  border-style: solid;
+  border-color: var(--skyblue);
+  border-radius: 5%;
+  /* background-color: var(--white); */
+  /* color: var(--black); */
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding: 0 0.5em;
+  color: var(--black);
 }
