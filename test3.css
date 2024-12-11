@@ -1,0 +1,24 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("fonts/scribble.regular.ttf");
+}
+
+:root {
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+  --gray1: #d3d3d3;
+  --teal: #006060;
+  --skyblue: #0ce3f2;
+  --orange: #ffd500;
+  --lightblue: #00fde4;
+}
+
+.navbar-brand {
+  font-family: myFirstFont;
+  font-size: 40px;
+}
