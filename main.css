@@ -58,6 +58,96 @@ main.container {
   margin-right: 0;
 }
 
+/* Contact Form */
+
+form.loginForm {
+  display: block;
+  justify-self: center;
+  border-style: solid;
+  width: 400px;
+  padding: 10px;
+  background-color: var(--white);
+}
+
+form.loginForm h1 {
+  display: flex;
+  justify-content: left;
+}
+
+section.input_form label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+section.input_form input {
+  display: inline-block;
+  width: 200px;
+  line-height: 20px;
+}
+
+section.pronouns fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+section.pronouns legend {
+  display: flex;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.form_submit {
+  background-color: black;
+  color: white;
+  width: 180px;
+  height: 25px;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form_reset {
+  background-color: white;
+  border-color: black;
+  border: 1px solid black;
+  width: 180px;
+  height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form_submit:hover {
+  background-color: var(--violetred);
+}
+
+.form_reset:hover {
+  background-color: var(--gray1);
+}
+
+/* About page section */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+p.bio {
+  width: 50%;
+}
+
+/* Navbar styling code */
+
 @media screen and (min-width: 905px) {
   .navbar ul li {
     display: inline-block;

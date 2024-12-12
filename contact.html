@@ -35,6 +35,44 @@
       </header>
 
       <h1 class="hello">Contact</h1>
+
+      <form action="/login.php" class="loginForm">
+        <h1>Contact Me!</h1>
+        <p>Fill up the items in the form below.</p>
+        <section class="input_form">
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Caterina Paun"
+            />
+          </div>
+        </section>
+        <section class="pronouns">
+          <fieldset>
+            <legend>Pronouns</legend>
+            <input type="radio" name="pronouns" id="female" value="She/her" />
+            <label for="female">She/her</label>
+            <br />
+            <input type="radio" name="pronouns" id="male" value="He/him" />
+            <label for="male">He/him</label>
+            <br />
+            <input type="radio" name="pronouns" id="NA" value="NA" />
+            <label for="NA">I prefer not to say</label>
+            <br />
+          </fieldset>
+        </section>
+        <div>
+          <label for="question">Question:</label>
+          <input type="question" name="question" id="question" />
+        </div>
+        <section>
+          <input type="submit" class="form_submit" value="Submit" />
+          <input type="reset" class="form_reset" value="Reset" />
+        </section>
+      </form>
     </main>
   </body>
 </html>
